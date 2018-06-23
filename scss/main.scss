@@ -6,13 +6,22 @@
 @import "partials/typography";
 @import "partials/base";
 @import "partials/reset";
+@import "partials/images";
 
 //layout
 $padding: 20px;
 $line-height: 100px;
  
 //styles
+
+html{
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
+    width: 100%;;
     @include flex-layout-row;
     flex-direction: column;
     font-family: $body-font;
@@ -26,6 +35,10 @@ h1, h2, h3, nav a {
     color: $text-color-dark;
 } 
 
+.container{
+    @include flex-layout-row;
+}
+
 //header styles
 .header-content-wrap{
     background-color: $header-color;
@@ -36,18 +49,14 @@ h1, h2, h3, nav a {
         padding: 0 $padding;
         color: $text-color-light;
     }
-    img{
-        width: auto;
-    }
+    
 }
 
-.container{
-    @include flex-layout-row;
-}
+
 //nav styles
 nav{
     display: block;
-    flex: 1 0 1;
+    flex: 1 0 auto;
     ul{        
         @include flatten;
         list-style: none;
@@ -83,36 +92,60 @@ nav{
 //content styles
 .wrapper{
     background-color: $wrapper-bg-color;
-    width: 90%;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0;
 }
 
-main h2{
+main{ 
+    width: 100%;
+    h1{
+        text-align: center;
         font-size: 3em;
         font-weight: 750;
+    }
+    h2{
+        text-align: center;
+    }
 }
+
 .top-banner{
+    max-width: 100%;
     padding: 50px;
     text-align: center;    
     
     p{
-        line-height: 5px;
+        line-height: 20px;
     }
 }
 .mid-banner{
+    max-width: 100%;
     position: relative;
+    border: 10px solid black;
+    ul{
+        padding: 0;
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    li{
+        max-width: 30%;;
+        display: flex;
+        flex: 1 0 1;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px;
+        color: $text-color-light;
+        background: $header-color;
+    }
 }
-img{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
+
 
 
 section{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: auto;
 }
 
 section h1{
@@ -120,18 +153,49 @@ section h1{
     text-align: center;
 }
 
-section .row{
-    display: flex;
+.row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-content: center;
 }
 
 article{
-    flex: 1;
+    display: grid;
+    table{
+        width: 100%;
+        margin: 5px 10%;
+    }
+    td{
+        padding: 5px;
+    }
+    td:first-of-type{
+        text-align: right;
+    }
+    .days{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0;
+    .day{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+            a{
+            display: flex;
+            color: $text-color-light;
+            background-color: $header-color;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
+}
 }
 
-section .row:last-child{
-    display: flex;
-    grid-row: 3;   
-}
+
 
 article{
     display: grid;
@@ -191,7 +255,9 @@ footer{
     nav{
         display: none;
     }
-
+    h1{
+        text-align: center;
+    }
     .btn-menu{
         border: none;
         background-color: $header-color;
@@ -222,16 +288,136 @@ footer{
         }
     }
 
-    section{ 
-    .row{
-        display: block;
+    section .row{
+        grid-template-columns: 1fr;
+        grid-column: 1;
+        align-content: center;
+        .column .ul{
+            margin: auto;
+            padding: 10px 10px;
+            li{
+                padding: 5px;
+            }
+        }
+        
+        .column{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-between;
+            align-self: center;
+        }
     }
-    .row:last-child{
-        display: block;
+    .days{
+        padding: 10px;
+    }
+    
+    
+
+footer .row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    flex-direction: column;
+}
+    .column{
+        padding: 10px;
+    }
+    .column:first-of-type{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        h3:last-child{
+            display: grid;
+            grid-column: 1/3;
+            text-align: center;
+            margin: 0 0 0 -20%;
+        }
+    }
+}
+h3{
+    margin: 10px 0px;
+}
+@media only screen and (max-width: 610px){
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        .column:first-of-type{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            h3:last-child{
+                display: grid;
+                grid-column: 2;
+                text-align: left;
+                margin: 10px 0
+            }
+        }
+    }
+
+    article .days{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 10px;
+        paddautoing: 0;
+        .day{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex: 1 0 auto;
+        }
     }
 }
 
-footer .row{
-    flex-direction: column;
+@media only screen and (max-width: 420px){
+    html{
+        overflow-x: auto;
+    }
+    footer .row{
+        display: flex;
+        flex-direction: column;
+        .column:first-of-type{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            h3:last-child{
+                display: grid;
+                grid-column: 2;
+                text-align: left;
+                margin: 10px 0
+            }
+        }
+    }
+
+    article .days{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6, 1fr);
+        margin: auto;
+        grid-column-gap: 10px;
+        padding: 0;
+        .day{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex: 1 0 auto;
+        }
+    }
+.top-banner{
+    h1{
+        font-size: 2.1em;
+    }
+    p{
+        font-size: 1em;
+    }
 }
+
+    .mid-banner{
+        display: grid;
+        grid-template-columns: 1fr;
+        h1{
+            font-size: 2.1em;
+        }
+        ul{
+            display: grid;
+            li{
+            max-width: 100%;
+        }
+    }
+    }
 }
