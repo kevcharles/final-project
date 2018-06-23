@@ -1,76 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
-//variables
-
-//colors variables
-$header-color: #003E6B;
-$body-bg-color: blue;
-$wrapper-bg-color: rgb(253, 253, 253);
-
-//textcolors variables
-$text-color-light: white;
-$text-color-dark: black;
-
-//typography variables
-$body-font: ‘Karla’, sans-serif;
-$header-font: ‘Montserrat’, sans-serif;
+//Modules and Variables
+@import "modules/colors";
+@import "partials/typography";
+@import "partials/base";
+@import "partials/reset";
 
 //layout
 $padding: 20px;
 $line-height: 100px;
-//grid-values
-$gutter: 2;
-
-//Hover State Selecter
-$hover: '&:hover, &:focus, &:active';
-
-// Function to
-// Convert Px to Ems
-@function em($px, $bc: 16){
-    @return #{$px/$bc}em; 
-}
-
-// Media Query Breakpoints
-$desktopMedium: em(1250);
-$tabletLandscape: em(1024);
-$tabletPortrait: em(850);
-$phoneLandscape: em(670);
-$phonePortrait: em(420);
-
-//Mixins
-//Creates a basic row
-@mixin flex-layout-row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-//Flatten HTML elements
-@mixin flatten{
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-
-//Reset
-//Box Sizing Reset
-
-html{
-    box-sizing: border-box;}
-    
-*, *::before, *::after{
-        box-sizing: inherit;
-    }    
-img{
-        max-width: 100%;
-        height: auto;
-    }    
-
-table{
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-    
+ 
 //styles
 body{
     @include flex-layout-row;
@@ -85,8 +25,6 @@ h1, h2, h3, nav a {
     font-family: $header-font;
     color: $text-color-dark;
 } 
-
-
 
 //header styles
 .header-content-wrap{
