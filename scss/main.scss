@@ -281,11 +281,20 @@ footer{
         height: 200px;
         width: 100%;
         ul li{
-            display: block;            
+            display: block;        
         }
         a{
             text-align: center;
             line-height: 40px;
+            #{$hover}{
+                background-color: lighten($header-color, 10);
+            } 
+        }
+        ul li:nth-child(odd) a{
+            background-color: darken($header-color, 10);  
+            #{$hover}{
+                background-color: lighten($header-color, 10);
+            }          
         }
         }
     }

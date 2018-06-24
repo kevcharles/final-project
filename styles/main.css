@@ -241,6 +241,12 @@ footer {
     .show nav a {
       text-align: center;
       line-height: 40px; }
+      .show nav a:hover, .show nav a:focus, .show nav a:active {
+        background-color: #005c9e; }
+    .show nav ul li:nth-child(odd) a {
+      background-color: #002038; }
+      .show nav ul li:nth-child(odd) a:hover, .show nav ul li:nth-child(odd) a:focus, .show nav ul li:nth-child(odd) a:active {
+        background-color: #005c9e; }
 
   section .row {
     grid-template-columns: 1fr;
