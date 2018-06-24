@@ -93,7 +93,7 @@ nav{
 //content styles
 .wrapper{
     background-color: $wrapper-bg-color;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -119,11 +119,15 @@ main{
     }
 }
 .mid-banner{
-    max-width: 100%;
+    width: 100%;
     position: relative;
-    border: 10px solid black;
+    background-color: $header-color;
+    h1{
+        color: $text-color-light;
+        padding: 10px;
+    }
     ul{
-        padding: 0;
+        padding: 0 0 10px 0;
         display: flex;
         max-width: 100%;
         flex-wrap: wrap;
@@ -136,8 +140,11 @@ main{
         flex-wrap: wrap;
         margin: 10px;
         padding: 10px;
-        color: $text-color-light;
-        background: $header-color;
+        color: $text-color-dark;
+        background-color: $list-bg-color;
+        #{$hover}{
+            background-color: lighten($list-bg-color, 10);
+        } 
     }
 }
 
@@ -191,6 +198,9 @@ article{
             margin: 10px 0;
             padding: 10px;
             text-decoration: none;
+            #{$hover}{
+                background-color: lighten($header-color, 10);
+            } 
         }
     }
 }
@@ -220,6 +230,9 @@ article{
         color: $text-color-light;
         background-color: $header-color;
         padding: 10px 20px;
+        #{$hover}{
+            background-color: lighten($header-color, 10);
+        } 
     }
 }
 
