@@ -11,15 +11,15 @@
 
 <header>
 	<div class="header-content-wrap container">
-		<h1><a href="#0">Comp 1950</a></h1>
+		<h1><a href="index.php">Comp 1950</a></h1>
 		<button class="btn-menu">Menu</button>
 		<nav>
 			<ul>
-				<li><a href="#0">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="#0">About</a></li>
 				<li><a href="#0">Schedule</a></li>
 				<li><a href="#0">Lessons</a></li>
-				<li><a href="#0">Contact</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</ul>
 		</nav>	
 	</div>

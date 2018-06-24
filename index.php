@@ -97,7 +97,7 @@
 		</section>
 		<div class="bottom-banner">
 			<p>Start Your new career today!</p>
-			<a href="#0">Contact Us</a>
+			<a href="contact.php">Contact Us</a>
 		</div>
 	</main>
 
