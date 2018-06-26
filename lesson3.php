@@ -1,7 +1,7 @@
 <?php
 	include ("header.php");
 ?>
-
+    <main>
         <div class="lesson-content">
             <h1>Lesson 3</h1>
             <section class="lesson-section agenda">
@@ -376,7 +376,7 @@
                 </ul>
             </section>
         </div>       
-
+    </main>
 
 <?php
     include ("footer.php");

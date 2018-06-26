@@ -1,7 +1,7 @@
 <?php
 	include ("header.php");
 ?>
-
+    <main>
         <div class="lesson-content">
             <h1>Lesson 1</h1>
             <section class="lesson-section agenda">
@@ -351,7 +351,7 @@
                 <p>...and yes, there will be a practical, open book quiz at the start of session #2! (hint: practice using a browser based diagnostic tool)</p>
             </section>
         </div>       
-
+    </main>
 
 <?php
     include ("footer.php");
