@@ -5,7 +5,7 @@
 				<h3><a href="about.php">About</a></h3>
 				<h3><a href="schedule.php">Schedule</a></h3>
 				<h3><a href="lessons.php">Lessons</a></h3>
-				<h3 class=last><a href="contact.pho">Contact</a></h3>
+				<h3 class=last><a href="contact.php">Contact</a></h3>
 			</div>
 			<div class="column">
 				<h2><a href="#0">BCIT</a></h2>

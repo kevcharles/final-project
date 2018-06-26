@@ -78,9 +78,9 @@
 				<article class="column">
 					<h2>Schedules</h2>
 					<ul class="days">
-						<li class="day"><a href="#0">Day 01</a></li>
-						<li class="day"><a href="#0">Day 02</a></li>
-						<li class="day"><a href="#0">Day 03</a></li>
+						<li class="day"><a href="lesson1.php">Day 01</a></li>
+						<li class="day"><a href="lesson2.php">Day 02</a></li>
+						<li class="day"><a href="lesson3.php">Day 03</a></li>
 						<li class="day"><a href="#0">Day 04</a></li>
 						<li class="day"><a href="#0">Day 05</a></li>
 						<li class="day"><a href="#0">Day 06</a></li>
