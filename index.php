@@ -1,3 +1,7 @@
+<?php
+	include ("header.php");
+?>
+
 <div class="wrapper container">
 	<main>
 		<div class="top-banner">
@@ -96,3 +100,7 @@
 			<a href="contact.php">Contact Us</a>
 		</div>
 	</main>
+
+<?php
+	include ("footer.php");
+?>
