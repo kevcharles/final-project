@@ -1,6 +1,7 @@
 <?php
 	include ("header.php");
 ?>
+<div class="wrapper container">
     <main>
         <div class="about_content">
             <article>
@@ -17,7 +18,7 @@
                 <p>By the end of this course successful students will be able to build dynamic and semantically marked-up content that is viewable on mobile and desktop screen sizes.</p>
             </article>
         </div>
-    <main>
+    </main>
 
 <?php
     include ("footer.php");

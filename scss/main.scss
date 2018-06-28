@@ -55,6 +55,7 @@ h1, h2, h3, nav a {
 
 //nav styles
 nav{
+    
     display: flex;
     justify-content: space-between;
     ul{    
@@ -92,6 +93,7 @@ nav{
 //content styles
 .wrapper{
     background-color: $wrapper-bg-color;
+    min-height: 100vh;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -238,7 +240,9 @@ article{
 
 // modified by Jason for about.php
 .about_content{
-    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
     padding: 50px;
     display: flex;
     flex-direction: row;
@@ -264,7 +268,9 @@ article{
 
 // modified by Jason for lessons.php 
 .lessons{
-    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
     padding: 50px;
     background-color: whitesmoke;
     ol{
@@ -309,10 +315,12 @@ table.form{
 
 //footer
 footer{
+    margin: 0;
+    padding: 0;
     background-color: #000000;
     color: $text-color-light;
     width: 100%;
-    h2{
+    h2{ 
         padding: 10px 0;
     }
     .row{

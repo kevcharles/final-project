@@ -82,6 +82,7 @@ nav {
 
 .wrapper {
   background-color: #fdfdfd;
+  min-height: 100vh;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto; }
@@ -198,7 +199,9 @@ article {
       background-color: #005c9e; }
 
 .about_content {
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
   padding: 50px;
   display: flex;
   flex-direction: row;
@@ -219,7 +222,9 @@ article {
       border-radius: 50%; }
 
 .lessons {
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
   padding: 50px;
   background-color: whitesmoke; }
   .lessons ol {
@@ -254,6 +259,8 @@ table.form {
     font-size: 2em; }
 
 footer {
+  margin: 0;
+  padding: 0;
   background-color: #000000;
   color: white;
   width: 100%; }

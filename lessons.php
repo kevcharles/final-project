@@ -1,6 +1,7 @@
 <?php
 	include ("header.php");
 ?>
+<div class="wrapper container">
     <main>
         <div class="lessons">
             <h1>Course Lessons</h1>
