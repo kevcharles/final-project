@@ -283,7 +283,21 @@ footer {
 
 @media only screen and (max-width: 925px) {
   nav {
-    display: none; }
+    height: 0px;
+    display: block;
+    width: 100%;
+    transition: height 1s ease-in-out; }
+    nav ul li {
+      display: block; }
+    nav ul a {
+      text-align: center;
+      line-height: 40px; }
+      nav ul a:hover, nav ul a:focus, nav ul a:active {
+        background-color: #005c9e; }
+    nav ul li:nth-child(odd) a {
+      background-color: #002038; }
+      nav ul li:nth-child(odd) a:hover, nav ul li:nth-child(odd) a:focus, nav ul li:nth-child(odd) a:active {
+        background-color: #005c9e; }
 
   h1 {
     text-align: center; }
@@ -302,20 +316,7 @@ footer {
       background-color: #002038; }
 
   .show nav {
-    display: block;
-    height: 200px;
-    width: 100%; }
-    .show nav ul li {
-      display: block; }
-    .show nav a {
-      text-align: center;
-      line-height: 40px; }
-      .show nav a:hover, .show nav a:focus, .show nav a:active {
-        background-color: #005c9e; }
-    .show nav ul li:nth-child(odd) a {
-      background-color: #002038; }
-      .show nav ul li:nth-child(odd) a:hover, .show nav ul li:nth-child(odd) a:focus, .show nav ul li:nth-child(odd) a:active {
-        background-color: #005c9e; }
+    height: 200px; }
 
   section .row {
     grid-template-columns: 1fr;
