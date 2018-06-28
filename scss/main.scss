@@ -305,6 +305,36 @@ article{
     background-color: whitesmoke;
 }
 
+
+//schedule page
+.schedule{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    .days{
+        background-color: rgba($color: $header-color, $alpha: 0.5);
+        padding: 10px;
+        text-align: center;
+        #{$hover}{
+            background-color: lighten(rgba($color: $header-color, $alpha: 0.5), 10);
+        } 
+        h2{
+            font-size: 1.5em;
+        }
+        ul, li{
+            padding: 0 5px;
+            margin: 5px;
+            list-style: none;
+        }
+    }
+    h1{
+        grid-column: 1/4;
+    }
+}
+
+
 //contact page
 table.form{
     width: auto;
@@ -353,7 +383,7 @@ footer{
         height: 0px;
         display: block;
         width: 100%;
-        transition: height 1s ease-in-out;
+        transition: height 0.75s ease-in-out;
         ul {
         li{
             display: block;  
@@ -422,7 +452,13 @@ footer{
         padding: 10px;
     }
     
-    
+    div.schedule{
+        display: flex;
+        flex-direction: column;
+        .days{
+            margin: 10px;
+        }
+    }
 
 footer .row{
     display: grid;
@@ -460,7 +496,9 @@ h3{
             }
         }
     }
-
+    .schedule{
+        grid-template-columns: 1fr;
+    }
     article .days{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(4, 1fr);

@@ -252,6 +252,27 @@ article {
   padding: 50px;
   background-color: whitesmoke; }
 
+.schedule {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 30px; }
+  .schedule .days {
+    background-color: rgba(0, 62, 107, 0.5);
+    padding: 10px;
+    text-align: center; }
+    .schedule .days:hover, .schedule .days:focus, .schedule .days:active {
+      background-color: rgba(0, 92, 158, 0.5); }
+    .schedule .days h2 {
+      font-size: 1.5em; }
+    .schedule .days ul, .schedule .days li {
+      padding: 0 5px;
+      margin: 5px;
+      list-style: none; }
+  .schedule h1 {
+    grid-column: 1/4; }
+
 table.form {
   width: auto;
   height: auto;
@@ -287,7 +308,7 @@ footer {
     height: 0px;
     display: block;
     width: 100%;
-    transition: height 1s ease-in-out; }
+    transition: height 0.75s ease-in-out; }
     nav ul li {
       display: block; }
     nav ul a {
@@ -337,6 +358,12 @@ footer {
   .days {
     padding: 10px; }
 
+  div.schedule {
+    display: flex;
+    flex-direction: column; }
+    div.schedule .days {
+      margin: 10px; }
+
   footer .row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -367,6 +394,9 @@ h3 {
         grid-column: 2;
         text-align: left;
         margin: 10px 0; }
+
+  .schedule {
+    grid-template-columns: 1fr; }
 
   article .days {
     grid-template-columns: repeat(3, 1fr);
