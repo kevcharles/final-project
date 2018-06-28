@@ -5,6 +5,7 @@
 <title>BCIT Comp 1950: Website Design and Development 2 - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/main.css">
+<script type="text/JavaScript" src="scripts/validate.js"></script>
 </head>
 
 <body>
