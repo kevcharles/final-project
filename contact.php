@@ -13,6 +13,9 @@
                     value="error.php"/>
                     <table class="form">
                     <tr>
+                        <th colspan="2">Contact</th>
+                    </tr>
+                    <tr>
                         <td class="td">
                             <label for="firstName">First Name:</label>
                         </td>

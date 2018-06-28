@@ -82,6 +82,7 @@ nav {
 
 .wrapper {
   background-color: #fdfdfd;
+  width: 100%;
   max-width: 1400px;
   margin: 0 auto; }
 
@@ -249,6 +250,8 @@ table.form {
   width: auto;
   height: auto;
   margin: 40px auto; }
+  table.form th {
+    font-size: 2em; }
 
 footer {
   background-color: #000000;

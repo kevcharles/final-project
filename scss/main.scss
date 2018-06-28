@@ -92,6 +92,7 @@ nav{
 //content styles
 .wrapper{
     background-color: $wrapper-bg-color;
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -301,6 +302,9 @@ table.form{
     width: auto;
     height: auto;
     margin: 40px auto;
+    th{
+        font-size: 2em;
+    }
 }
 
 //footer
