@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>BCIT Comp 1950: Website Design and Development 2 - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/main.css">
-<script type="text/JavaScript" src="scripts/validate.js"></script>
+<script src="scripts/validate.js"></script>
 </head>
 
 <body>
