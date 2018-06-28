@@ -252,7 +252,15 @@ article {
   padding: 50px;
   background-color: whitesmoke; }
 
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .schedule {
+  position: relative;
+  text-align: center;
   margin: 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

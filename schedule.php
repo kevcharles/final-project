@@ -4,7 +4,6 @@
 <div class="wrapper container">
     <main>
         <div class="schedule">
-            <h1>Schedule</h1>
                     <div class="days"> <h2>Day 01</h2>
                     <ul>
                         <li>Course Introduction</li>
